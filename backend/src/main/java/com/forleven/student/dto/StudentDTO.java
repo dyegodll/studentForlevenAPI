@@ -25,6 +25,12 @@ public class StudentDTO implements Serializable {
 	public StudentDTO() {
 	}
 
+	public StudentDTO(String enrollment, String firstName, String lastName) {
+		this.enrollment = enrollment;
+		this.firstName = firstName;
+		this.lastName = lastName;
+	}
+
 	public StudentDTO(Student entity) {
 		enrollment = entity.getEnrollment();
 		firstName = entity.getFirstName();
